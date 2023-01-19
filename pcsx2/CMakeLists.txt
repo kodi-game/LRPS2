@@ -722,3 +722,5 @@ endif()
    
    target_link_libraries(pcsx2_libretro PRIVATE ${pcsx2FinalLibs})
 target_compile_features(${Output} PRIVATE cxx_std_17)
+
+install(TARGETS pcsx2_libretro DESTINATION ${CMAKE_INSTALL_LIBDIR})
